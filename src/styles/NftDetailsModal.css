@@ -1,0 +1,94 @@
+.nft-details-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(34, 34, 34, 0.4);
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+
+.rectangle {
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 1px 5px 1px grey;
+    padding: 20px;
+    min-width: 300px;
+    min-height: 300px;
+}
+
+.close-button {
+    font-size: 25px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.close-button:hover {
+    color: blue;
+}
+
+.nft-image {
+    width: 200px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.details--button {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background: linear-gradient(230.46deg, rgba(255, 0, 0, 0.57) -17.28%, rgba(36, 57, 240, 0.57) 80.51%);
+    padding: 10px 20px;
+    text-align: center;
+    max-width: 200px;;
+    margin-top: 20px;
+}
+
+a.details--button {
+    text-decoration: none;
+}
+
+.details--property {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    width: 100%;
+    padding: 0px 10px;
+}
+
+.details--property-name {
+    margin: 5px 0px;
+    font-weight: 300;
+    color: grey;
+    padding-right: 20px;
+}
+
+.details--property h3 {
+    margin: 5px  0px;
+    text-align: right;
+    max-width: 300px;
+    font-weight: 300;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 700px) {
+    .rectangle {
+        display: block;
+    }
+}

@@ -1,0 +1,27 @@
+.nfts-grid--container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 80px;
+    padding: 40px;
+    height: 100%;
+}
+
+.nfts-grid--grid {
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .nfts-grid--grid {
+        grid-template-columns: repeat(2, auto);     
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .nfts-grid--grid {
+        grid-template-columns: repeat(1, auto);     
+    }
+}
