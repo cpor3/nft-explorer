@@ -2,7 +2,7 @@ import { Alchemy, Network, NftFilters } from "alchemy-sdk";
 import { nanoid } from "nanoid";
 
 const config = {
-    apiKey: import.meta.env.VITE_ALCHEMY_API_KEY,
+    apiKey: import.meta.env.VITE_ALCHEMY_API_KEY || process.env.ALCHEMY_API_KEY,
     network: Network.ETH_MAINNET
 }
 
