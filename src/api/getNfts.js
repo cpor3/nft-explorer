@@ -8,8 +8,6 @@ const config = {
 
 const alchemy = new Alchemy(config);
 
-console.log(config);
-
 export async function getNfts(address, pageNumber="") {
     const nfts = await alchemy.nft.getNftsForOwner(address, {
         excludeFilters: [NftFilters.SPAM]
